@@ -1,6 +1,5 @@
 FROM kalilinux/kali-rolling:latest 
 
-
 ARG KALI_VERSION=headless
 ENV DEBIAN_FRONTEND=nointeractive 
 RUN apt update 
@@ -8,7 +7,6 @@ RUN apt upgrade -y
 RUN apt install -y kali-linux-${KALI_VERSION}
 RUN apt install -y dbus dbus-x11 novnc net-tools nano tightvncserver net-tools htop pulseaudio autocutsel inetutils-ping
 RUN apt clean 
-
 
 ARG KALI_GUI=xfce
 RUN apt install -y kali-desktop-${KALI_GUI}
