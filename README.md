@@ -1,6 +1,5 @@
 # Kali-VNC
-a Small Kali only with vnc which you can access using VNC
-
+a Small Kali only with vnc which you can access using VNC, **REMEMBER** to configure the dockerfile
 
 ```bash
 sudo docker built -t kali-gui .
