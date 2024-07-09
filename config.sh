@@ -25,6 +25,5 @@ chmod 777 /home/$YOUR_USER/.vnc/tightvncserver.conf
 
 # Starting VNC
 su $YOUR_USER -c "vncserver :0 -rfbport $VNCPORT -geometry $VNCDISPLAY -depth $VNCDEPTH > /dev/null 2>&1 &"
-#su $YOUR_USER -c "/usr/share/novnc/utils/novnc_proxy --listen $NOVNCPORT --vnc localhost:$VNCPORT > /dev/null 2>&1 &" 
 
 /bin/bash && su - $YOUR_USER
